@@ -10,6 +10,7 @@ const adduser = async (req, res) => {
   const hashedPassword = await bcrypt.hash(body.password, 10);
   body.password = hashedPassword;
   await userModel.create(body);
+
   res.redirect("/users");
 };
 

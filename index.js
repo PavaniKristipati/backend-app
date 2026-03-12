@@ -22,7 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-app.use(
+app.use(   //whenever we create session id unless and until you close the tab you will be in this
+  
   session({
     secret: "secretkey",
     resave: false,
