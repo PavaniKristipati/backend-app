@@ -25,7 +25,7 @@ return res.redirect("/auth/login");
 // create session
 req.session.user = user;
 
-res.redirect("/products"); // or "/"
+res.redirect("/"); // or "/"
 };
 
 // show register page

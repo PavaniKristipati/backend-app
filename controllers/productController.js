@@ -33,11 +33,13 @@ const saveProduct = async (req, res) => {
   res.redirect("/products")
 };
 
+
 export {
   getProducts,
   addProduct,
   addProductForm,
   deleteProduct,
   editProductForm,
-  saveProduct
+  saveProduct,
+  
 };
